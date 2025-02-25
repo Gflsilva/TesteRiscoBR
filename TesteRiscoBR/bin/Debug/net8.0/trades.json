@@ -1,0 +1,9 @@
+[
+  {
+    "Id": 1,
+    "Value": 1000000.0,
+    "ClientSector": "public",
+    "NextPaymentDate": "2025-02-25T00:00:00",
+    "Category": 2
+  }
+]
