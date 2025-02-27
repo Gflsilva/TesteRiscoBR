@@ -7,6 +7,7 @@ using TesteRiscoBR.Repository;
 using Newtonsoft.Json;
 using TesteRiscoBR.Repository.Interface;
 using TesteRiscoBR.Business;
+using TesteRiscoBR.Business.Interface;
 
 // Modelo da entidade Categoria
 
@@ -24,9 +25,10 @@ class Program
     {
         ICategoryRepository _categoryRepository = new CategoryRepository();
         ITradeRepository _tradeRepository = new TradeRepository();
+        IClassifier _classifier = new Classifier(_categoryRepository);
 
         ICategoryBusiness _categoryBusiness = new CategoryBusiness(_categoryRepository);
-        ITradeBusiness _tradeBusiness = new TradeBusiness(_tradeRepository);
+        ITradeBusiness _tradeBusiness = new TradeBusiness(_tradeRepository, _classifier);
 
         while (true)
         {

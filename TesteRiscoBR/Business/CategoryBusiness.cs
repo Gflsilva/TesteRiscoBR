@@ -30,9 +30,17 @@ namespace TesteRiscoBR.Business
 
             categoryEntity = PreencherCampos(categoryEntity);
 
-            _categoryRepository.AddCategory(categoryEntity);
 
-            Console.WriteLine("Categoria adicionada com sucesso!");
+            if (categoryEntity.Erros)
+            {
+                _categoryRepository.AddCategory(categoryEntity);
+
+                Console.WriteLine("Categoria adicionada com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine("\nVerifique as informações preenchidas!\n");
+            }
         }
 
         public void RemoveCategory()
@@ -69,7 +77,7 @@ namespace TesteRiscoBR.Business
                 categoryEntity.Operator = Console.ReadLine();
 
                 Console.Write("Digite o valor da nova categoria: ");
-                categoryEntity.Value = float.Parse(Console.ReadLine());
+                categoryEntity.Value = decimal.Parse(Console.ReadLine());
             }
             catch (Exception ex)
             {
@@ -78,10 +86,7 @@ namespace TesteRiscoBR.Business
                 return categoryEntity;
             }
 
-            if (!Validate(categoryEntity))
-            {
-                return categoryEntity;
-            }
+            categoryEntity.Erros = Validate(categoryEntity);
 
             return categoryEntity;
         }
@@ -93,7 +98,7 @@ namespace TesteRiscoBR.Business
 
             if (!validationResult.IsValid)
                 foreach (var error in validationResult.Errors)
-                    Console.WriteLine(error.ErrorMessage);
+                    Console.WriteLine("\n" + error.ErrorMessage);
 
             return validationResult.IsValid;
         }

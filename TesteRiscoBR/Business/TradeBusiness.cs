@@ -8,17 +8,20 @@ using System.Threading.Tasks;
 using TesteRiscoBR.Repository.Interface;
 using TesteRiscoBR.Model.Trade.Create;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using TesteRiscoBR.Business.Interface;
 
 namespace TesteRiscoBR.Business
 {
     public class TradeBusiness : ITradeBusiness
     {
         ITradeRepository _tradeRepository;
+        IClassifier _classifier;
         TradeEntity tradeEntity;
 
-        public TradeBusiness(ITradeRepository tradeRepository)
+        public TradeBusiness(ITradeRepository tradeRepository, IClassifier classifier)
         {
             _tradeRepository = tradeRepository;
+            _classifier = classifier;
         }
 
         public void AddTrade()
@@ -27,8 +30,14 @@ namespace TesteRiscoBR.Business
 
             tradeEntity = PreencherCampos(tradeEntity);
 
-            _tradeRepository.AddTrade(tradeEntity);
-            Console.WriteLine("Trade cadastrada com sucesso!");
+            if (tradeEntity.Erros)
+            {
+                _tradeRepository.AddTrade(tradeEntity);
+                Console.WriteLine("Trade cadastrada com sucesso!");
+            }
+            else {
+                Console.WriteLine("\nVerifique as informações preenchidas!\n");
+            }
         }
 
         public void RemoveTrades()
@@ -57,7 +66,7 @@ namespace TesteRiscoBR.Business
             try
             {
                 Console.Write("Digite o valor da operação: ");
-                tradeEntity.Value = float.Parse(Console.ReadLine());
+                tradeEntity.Value = decimal.Parse(Console.ReadLine());
 
                 Console.Write("Digite o setor do cliente (Public/Private): ");
                 tradeEntity.ClientSector = Console.ReadLine();
@@ -65,8 +74,7 @@ namespace TesteRiscoBR.Business
                 Console.Write("Digite a data do próximo pagamento (MM/dd/yyyy): ");
                 tradeEntity.NextPaymentDate = DateTime.Parse(Console.ReadLine());
 
-                TradeClassifier tradeClassifier = new TradeClassifier();
-                tradeEntity.Category = tradeClassifier.Classify(tradeEntity);
+                tradeEntity.Category = _classifier.Classify(tradeEntity);
             }
             catch (Exception ex)
             {
@@ -75,10 +83,7 @@ namespace TesteRiscoBR.Business
                 return tradeEntity;
             }
 
-            if (!Validate(tradeEntity))
-            {
-                return tradeEntity;
-            }
+            tradeEntity.Erros = Validate(tradeEntity);
 
             return tradeEntity;
         }

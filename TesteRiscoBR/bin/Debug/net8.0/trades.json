@@ -5,7 +5,8 @@
     "ClientSector": "public",
     "NextPaymentDate": "2025-02-25T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": "2"
+    "Category": "2",
+    "Erros": false
   },
   {
     "Id": 2,
@@ -13,7 +14,8 @@
     "ClientSector": "private",
     "NextPaymentDate": "2025-02-26T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": "1"
+    "Category": "1",
+    "Erros": false
   },
   {
     "Id": 3,
@@ -21,7 +23,8 @@
     "ClientSector": "private",
     "NextPaymentDate": "2025-02-26T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": "NEW_RISK"
+    "Category": "NEW_RISK",
+    "Erros": false
   },
   {
     "Id": 4,
@@ -29,7 +32,8 @@
     "ClientSector": "private",
     "NextPaymentDate": "2025-02-26T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": "HIGH_RISK"
+    "Category": "HIGH_RISK",
+    "Erros": false
   },
   {
     "Id": 5,
@@ -37,7 +41,8 @@
     "ClientSector": "public",
     "NextPaymentDate": "2025-02-26T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": ""
+    "Category": "",
+    "Erros": false
   },
   {
     "Id": 6,
@@ -45,7 +50,8 @@
     "ClientSector": "public",
     "NextPaymentDate": "2025-02-26T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": "MEDIUM_RISK"
+    "Category": "MEDIUM_RISK",
+    "Erros": false
   },
   {
     "Id": 7,
@@ -53,7 +59,8 @@
     "ClientSector": "private",
     "NextPaymentDate": "2025-02-26T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": "HIGH_RISK"
+    "Category": "HIGH_RISK",
+    "Erros": false
   },
   {
     "Id": 8,
@@ -61,7 +68,8 @@
     "ClientSector": "private",
     "NextPaymentDate": "2025-02-26T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": "HIGH_RISK"
+    "Category": "HIGH_RISK",
+    "Erros": false
   },
   {
     "Id": 9,
@@ -69,7 +77,8 @@
     "ClientSector": "public",
     "NextPaymentDate": "2024-02-26T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": "EXPIRED"
+    "Category": "EXPIRED",
+    "Erros": false
   },
   {
     "Id": 10,
@@ -77,6 +86,16 @@
     "ClientSector": "PRIVATE",
     "NextPaymentDate": "2050-02-20T00:00:00",
     "ReferenceDate": "2025-02-26T00:00:00-03:00",
-    "Category": ""
+    "Category": "",
+    "Erros": false
+  },
+  {
+    "Id": 11,
+    "Value": 100000.0,
+    "ClientSector": "PUBLIC",
+    "NextPaymentDate": "2025-02-27T00:00:00",
+    "ReferenceDate": "2025-02-27T00:00:00-03:00",
+    "Category": "LOW_RISK",
+    "Erros": true
   }
 ]

@@ -13,6 +13,7 @@ namespace TesteRiscoBR.Entidates
         public string Name { get; set; }
         public string Type { get; set; }
         public string Operator { get; set; }
-        public float Value { get; set; }
+        public decimal Value { get; set; }
+        public bool Erros { get; set; }
     }
 }

@@ -8,16 +8,17 @@ using System.Threading.Tasks;
 using TesteRiscoBR.Repository.Interface;
 using TesteRiscoBR.Business;
 using TesteRiscoBR.Repository;
+using TesteRiscoBR.Business.Interface;
 
 namespace TesteRiscoBR
 {
-    public class TradeClassifier
+    public class Classifier : IClassifier
     {
         ICategoryRepository _categoryRepository;
 
-        public TradeClassifier()
+        public Classifier(ICategoryRepository categoryRepository)
         {
-            _categoryRepository = new CategoryRepository();
+            _categoryRepository = categoryRepository;
         }
 
 
