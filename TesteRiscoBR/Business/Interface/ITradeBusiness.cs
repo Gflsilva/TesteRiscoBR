@@ -11,10 +11,10 @@ namespace TesteRiscoBR.Repository.Interface
 {
     public interface ITradeBusiness
     {
-        public void AddTrade(TradeRepository repository);
+        public void AddTrade();
 
-        public void RemoveTrades(TradeRepository repository);
+        public void RemoveTrades();
 
-        public void ListTrades(TradeRepository repository);
+        public void ListTrades();
     }
 }

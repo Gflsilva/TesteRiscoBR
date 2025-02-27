@@ -1,6 +1,30 @@
 [
   {
     "Id": 1,
-    "Name": "teste"
+    "Name": "LOW_RISK",
+    "Type": "PUBLIC",
+    "Operator": "<",
+    "Value": 1000000.0
+  },
+  {
+    "Id": 2,
+    "Name": "CASA",
+    "Type": "PULIC",
+    "Operator": "PRIVATE",
+    "Value": 10000.0
+  },
+  {
+    "Id": 3,
+    "Name": "teste",
+    "Type": "public",
+    "Operator": "!",
+    "Value": 10.0
+  },
+  {
+    "Id": 4,
+    "Name": "teste",
+    "Type": "aaaaa",
+    "Operator": "\"",
+    "Value": 2.0
   }
 ]

@@ -8,10 +8,10 @@ namespace TesteRiscoBR.Repository.Interface
 {
     public interface ICategoryBusiness
     {
-        public void AddCategory(TradeRepository repository);
+        public void AddCategory();
 
-        public void RemoveCategory(TradeRepository repository);
+        public void RemoveCategory();
 
-        public void ListCategories(TradeRepository repository);
+        public void ListCategories();
     }
 }

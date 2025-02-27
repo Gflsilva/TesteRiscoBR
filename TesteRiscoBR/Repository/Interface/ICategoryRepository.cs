@@ -12,7 +12,7 @@ namespace TesteRiscoBR.Repository.Interface
     {
         public void LoadCategories();
 
-        public void AddCategory(string categoryName);
+        public void AddCategory(CategoryEntity categoryEntity);
 
         public void RemoveCategory(int categoryId);
 

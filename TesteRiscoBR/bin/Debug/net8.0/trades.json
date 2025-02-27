@@ -4,6 +4,79 @@
     "Value": 1000000.0,
     "ClientSector": "public",
     "NextPaymentDate": "2025-02-25T00:00:00",
-    "Category": 2
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": "2"
+  },
+  {
+    "Id": 2,
+    "Value": 2000000.9,
+    "ClientSector": "private",
+    "NextPaymentDate": "2025-02-26T00:00:00",
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": "1"
+  },
+  {
+    "Id": 3,
+    "Value": 2000000.0,
+    "ClientSector": "private",
+    "NextPaymentDate": "2025-02-26T00:00:00",
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": "NEW_RISK"
+  },
+  {
+    "Id": 4,
+    "Value": 1400000.0,
+    "ClientSector": "private",
+    "NextPaymentDate": "2025-02-26T00:00:00",
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": "HIGH_RISK"
+  },
+  {
+    "Id": 5,
+    "Value": 900000.0,
+    "ClientSector": "public",
+    "NextPaymentDate": "2025-02-26T00:00:00",
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": ""
+  },
+  {
+    "Id": 6,
+    "Value": 1120000.0,
+    "ClientSector": "public",
+    "NextPaymentDate": "2025-02-26T00:00:00",
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": "MEDIUM_RISK"
+  },
+  {
+    "Id": 7,
+    "Value": 1120000.0,
+    "ClientSector": "private",
+    "NextPaymentDate": "2025-02-26T00:00:00",
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": "HIGH_RISK"
+  },
+  {
+    "Id": 8,
+    "Value": 1300000.0,
+    "ClientSector": "private",
+    "NextPaymentDate": "2025-02-26T00:00:00",
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": "HIGH_RISK"
+  },
+  {
+    "Id": 9,
+    "Value": 200000000.0,
+    "ClientSector": "public",
+    "NextPaymentDate": "2024-02-26T00:00:00",
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": "EXPIRED"
+  },
+  {
+    "Id": 10,
+    "Value": 10000.0,
+    "ClientSector": "PRIVATE",
+    "NextPaymentDate": "2050-02-20T00:00:00",
+    "ReferenceDate": "2025-02-26T00:00:00-03:00",
+    "Category": ""
   }
 ]

@@ -54,3 +54,7 @@ C:\Users\gabri\source\repos\TesteRiscoBR\TesteRiscoBR\obj\Debug\net8.0\refint\Te
 C:\Users\gabri\source\repos\TesteRiscoBR\TesteRiscoBR\obj\Debug\net8.0\TesteRiscoBR.pdb
 C:\Users\gabri\source\repos\TesteRiscoBR\TesteRiscoBR\obj\Debug\net8.0\TesteRiscoBR.genruntimeconfig.cache
 C:\Users\gabri\source\repos\TesteRiscoBR\TesteRiscoBR\obj\Debug\net8.0\ref\TesteRiscoBR.dll
+C:\Users\gabri\source\repos\TesteRiscoBR\TesteRiscoBR\obj\Debug\net8.0\TesteRiscoBR.sourcelink.json
+C:\Users\gabri\source\repos\TesteRiscoBR\TesteRiscoBR\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\gabri\source\repos\TesteRiscoBR\TesteRiscoBR\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\gabri\source\repos\TesteRiscoBR\TesteRiscoBR\bin\Debug\net8.0\FluentValidation.dll

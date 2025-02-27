@@ -38,10 +38,11 @@ namespace TesteRiscoBR.Repository
             File.WriteAllText(CategoriesFilePath, json);
         }
 
-        public void AddCategory(string categoryName)
+        public void AddCategory(CategoryEntity categoryEntity)
         {
-            var category = new CategoryEntity { Id = categories.Count > 0 ? categories[^1].Id + 1 : 1, Name = categoryName };
-            categories.Add(category);
+            categoryEntity.Id = categories.Count > 0 ? categories[^1].Id + 1 : 1;
+
+            categories.Add(categoryEntity);
             SaveCategories();
         }
 

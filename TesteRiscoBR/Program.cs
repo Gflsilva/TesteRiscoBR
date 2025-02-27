@@ -22,8 +22,6 @@ class Program
 {
     static void Main()
     {
-        TradeRepository repository = new TradeRepository();
-
         ICategoryRepository _categoryRepository = new CategoryRepository();
         ITradeRepository _tradeRepository = new TradeRepository();
 
@@ -42,34 +40,41 @@ class Program
             Console.Write("\n Escolha uma opção: ");
             var option = Console.ReadLine();
 
-            switch (option)
+            try
             {
-                case "1":
-                    _tradeBusiness.AddTrade(repository);
-                    break;
-                case "2":
-                    _tradeBusiness.RemoveTrades(repository);
-                    break;
-                case "3":
-                    _tradeBusiness.ListTrades(repository);
-                    break;
+                switch (option)
+                {
+                    case "1":
+                        _tradeBusiness.AddTrade();
+                        break;
+                    case "2":
+                        _tradeBusiness.RemoveTrades();
+                        break;
+                    case "3":
+                        _tradeBusiness.ListTrades();
+                        break;
 
 
-                case "4":
-                    _categoryBusiness.AddCategory(repository);
-                    break;
-                case "5":
-                    _categoryBusiness.RemoveCategory(repository);
-                    break;
-                case "6":
-                    _categoryBusiness.ListCategories(repository);
-                    break;
+                    case "4":
+                        _categoryBusiness.AddCategory();
+                        break;
+                    case "5":
+                        _categoryBusiness.RemoveCategory();
+                        break;
+                    case "6":
+                        _categoryBusiness.ListCategories();
+                        break;
 
-                case "7":
-                    return;
-                default:
-                    Console.WriteLine("Opção inválida!");
-                    break;
+                    case "7":
+                        return;
+                    default:
+                        Console.WriteLine("Opção inválida!");
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("\nVerifique as informações preenchidas. " + ex.Message + "\n");
             }
         }
     }

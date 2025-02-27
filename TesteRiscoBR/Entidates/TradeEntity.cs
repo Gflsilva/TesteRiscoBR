@@ -10,9 +10,10 @@ namespace TesteRiscoBR.Entidates
     public class TradeEntity
     {
         public int Id { get; set; }
-        public double Value { get; set; }
+        public float Value { get; set; }
         public string ClientSector { get; set; }
         public DateTime NextPaymentDate { get; set; }
-        public TradeCategoryEnum Category { get; set; }
+        public DateTime ReferenceDate { get; set; } = DateTime.Today;
+        public string Category { get; set; } = string.Empty;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TesteRiscoBR.Enum;
 
 namespace TesteRiscoBR.Entidates
 {
@@ -10,8 +11,8 @@ namespace TesteRiscoBR.Entidates
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Tipo { get; set; }
-        public int Operador { get; set; }
-        public int Valor { get; set; }
+        public string Type { get; set; }
+        public string Operator { get; set; }
+        public float Value { get; set; }
     }
 }
