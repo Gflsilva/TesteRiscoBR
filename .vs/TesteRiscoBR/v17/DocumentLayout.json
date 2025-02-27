@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\business\\tradebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|solutionrelative:testeriscobr\\business\\tradebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\validator\\trade\\createrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|solutionrelative:testeriscobr\\validator\\trade\\createrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\business\\categorybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|solutionrelative:testeriscobr\\business\\categorybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\business\\tradebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|solutionrelative:testeriscobr\\business\\tradebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\entidates\\tradeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CreateRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Validator\\Trade\\CreateRequestValidator.cs",
               "RelativeDocumentMoniker": "TesteRiscoBR\\Validator\\Trade\\CreateRequestValidator.cs",
@@ -76,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CreateRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Validator\\Category\\CreateRequestValidator.cs",
               "RelativeDocumentMoniker": "TesteRiscoBR\\Validator\\Category\\CreateRequestValidator.cs",
@@ -115,20 +115,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "TradeBusiness.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Business\\TradeBusiness.cs",
               "RelativeDocumentMoniker": "TesteRiscoBR\\Business\\TradeBusiness.cs",
               "ToolTip": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Business\\TradeBusiness.cs",
               "RelativeToolTip": "TesteRiscoBR\\Business\\TradeBusiness.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAgwEEAAAAPAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwEYAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T22:10:25.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CategoryBusiness.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Business\\CategoryBusiness.cs",
               "RelativeDocumentMoniker": "TesteRiscoBR\\Business\\CategoryBusiness.cs",

@@ -68,7 +68,7 @@ namespace TesteRiscoBR.Business
                 Console.Write("Digite o valor da operação: ");
                 tradeEntity.Value = decimal.Parse(Console.ReadLine());
 
-                Console.Write("Digite o setor do cliente (Public/Private): ");
+                Console.Write("Digite o setor do cliente (PUBLIC/PRIVATE): ");
                 tradeEntity.ClientSector = Console.ReadLine();
 
                 Console.Write("Digite a data do próximo pagamento (MM/dd/yyyy): ");
