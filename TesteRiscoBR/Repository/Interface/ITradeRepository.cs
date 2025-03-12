@@ -19,6 +19,8 @@ namespace TesteRiscoBR.Repository.Interface
 
         public void RemoveTrades(int tradeId);
 
+        public void UpdateTrade(TradeEntity updatedTrade);
+
         public List<TradeEntity> GetTrades();
     }
 }

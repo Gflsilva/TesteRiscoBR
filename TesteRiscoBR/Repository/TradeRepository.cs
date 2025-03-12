@@ -53,6 +53,25 @@ namespace TesteRiscoBR.Repository
             SaveTrades();
         }
 
+        public void UpdateTrade(TradeEntity updatedTrade)
+        {
+            var existingTrade = trades.FirstOrDefault(t => t.Id == updatedTrade.Id);
+            if (existingTrade != null)
+            {
+                existingTrade.Value = updatedTrade.Value;
+                existingTrade.ClientSector = updatedTrade.ClientSector;
+                existingTrade.NextPaymentDate = updatedTrade.NextPaymentDate;
+                existingTrade.IsPEP = updatedTrade.IsPEP;
+                existingTrade.Category = updatedTrade.Category;
+
+                Console.WriteLine($"Trade {updatedTrade.Id} atualizada com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine($"Trade {updatedTrade.Id} não encontrada.");
+            }
+        }
+
         public List<TradeEntity> GetTrades()
         {
             return trades;

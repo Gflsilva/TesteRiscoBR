@@ -1,27 +1,31 @@
-ï»¿using TesteRiscoBR.Entidates;
+using TesteRiscoBR.Entidates;
 using TesteRiscoBR.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TesteRiscoBR.Repository.Interface;
-using TesteRiscoBR.Model.Trade.Create;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 using TesteRiscoBR.Business.Interface;
+using TesteRiscoBR.Model.Trade.Create;
 
 namespace TesteRiscoBR.Business
 {
     public class TradeBusiness : ITradeBusiness
     {
-        ITradeRepository _tradeRepository;
-        IClassifier _classifier;
-        TradeEntity tradeEntity;
+        private ITradeRepository _tradeRepository;
+        private IClassifierTrade _classifier;
+        private TradeEntity tradeEntity;
 
-        public TradeBusiness(ITradeRepository tradeRepository, IClassifier classifier)
+        public TradeBusiness(ITradeRepository tradeRepository, IClassifierTrade classifier)
         {
             _tradeRepository = tradeRepository;
             _classifier = classifier;
+        }
+
+        public List<TradeEntity> ConsultarCategorias()
+        {
+            List<TradeEntity> trades = _tradeRepository.GetTrades();
+
+            return trades;
         }
 
         public void AddTrade()
@@ -35,8 +39,9 @@ namespace TesteRiscoBR.Business
                 _tradeRepository.AddTrade(tradeEntity);
                 Console.WriteLine("Trade cadastrada com sucesso!");
             }
-            else {
-                Console.WriteLine("\nVerifique as informaÃ§Ãµes preenchidas!\n");
+            else
+            {
+                Console.WriteLine("\nVerifique as informações preenchidas!\n");
             }
         }
 
@@ -65,20 +70,20 @@ namespace TesteRiscoBR.Business
         {
             try
             {
-                Console.Write("Digite o valor da operaÃ§Ã£o: ");
+                Console.Write("Digite o valor da operação: ");
                 tradeEntity.Value = decimal.Parse(Console.ReadLine());
 
                 Console.Write("Digite o setor do cliente (PUBLIC/PRIVATE): ");
                 tradeEntity.ClientSector = Console.ReadLine();
 
-                Console.Write("Digite a data do prÃ³ximo pagamento (MM/dd/yyyy): ");
+                Console.Write("Digite a data do próximo pagamento (MM/dd/yyyy): ");
                 tradeEntity.NextPaymentDate = DateTime.Parse(Console.ReadLine());
 
                 tradeEntity.Category = _classifier.Classify(tradeEntity);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("\nVerifique as informaÃ§Ãµes preenchidas. " + ex.Message + "\n");
+                Console.WriteLine("\nVerifique as informações preenchidas. " + ex.Message + "\n");
 
                 return tradeEntity;
             }
@@ -99,6 +104,38 @@ namespace TesteRiscoBR.Business
                     Console.WriteLine(error.ErrorMessage);
 
             return validationResult.IsValid;
+        }
+
+        public void ProcessTradesInBatches(List<TradeEntity> trades, int batchSize = 10)
+        {
+            for (int i = 0; i < trades.Count; i += batchSize)
+            {
+                var batch = trades.Skip(i).Take(batchSize).ToList();
+                foreach (var trade in batch)
+                {
+                    trade.Category = _classifier.Classify(trade);
+                    _tradeRepository.AddTrade(trade);
+                }
+                Console.WriteLine($"Lote de {batch.Count} trades processado.");
+            }
+        }
+
+        public void TradeClassifier()
+        {
+            List<TradeEntity> retorno = ConsultarCategorias();
+
+            if (retorno.Count == 0)
+            {
+                Console.WriteLine("\nNão existem categorias cadastradas!\n");
+                return;
+            }
+
+            foreach (var item in retorno)
+            {
+                item.Category = _classifier.Classify(item);
+
+                _tradeRepository.UpdateTrade(item);
+            }
         }
     }
 }

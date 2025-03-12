@@ -18,6 +18,9 @@ using TesteRiscoBR.Business.Interface;
 // Classe para gerenciar o armazenamento em JSON
 
 
+// 1 - Preciso que a aplicação, ao ser executada, valide todas as trades cadastradas e classifique-as de acordo com a categoria.
+// 2 - Imaginando um cenário onde as trades tem diversas regras de classificação, como você faria para implementar essas regras de forma que seja fácil adicionar novas regras sem alterar o código já existente?
+
 // Programa principal
 class Program
 {
@@ -25,10 +28,12 @@ class Program
     {
         ICategoryRepository _categoryRepository = new CategoryRepository();
         ITradeRepository _tradeRepository = new TradeRepository();
-        IClassifier _classifier = new Classifier(_categoryRepository);
+
+        IEnumerable<ITradeClassificationRule> tradeRules = new List<ITradeClassificationRule> { new ExpiredTradeRule(), new HighRiskTradeRule(), new DBConsultRisk(_categoryRepository) };
+        IClassifierTrade _classifierTrade = new ClassifierTrade(tradeRules);
 
         ICategoryBusiness _categoryBusiness = new CategoryBusiness(_categoryRepository);
-        ITradeBusiness _tradeBusiness = new TradeBusiness(_tradeRepository, _classifier);
+        ITradeBusiness _tradeBusiness = new TradeBusiness(_tradeRepository, _classifierTrade);
 
         while (true)
         {
@@ -38,7 +43,8 @@ class Program
             Console.WriteLine("\n4. Cadastrar Categoria");
             Console.WriteLine("5. Remover Categoria");
             Console.WriteLine("6. Listar Categorias");
-            Console.WriteLine("\n7. Sair");
+            Console.WriteLine("\n7. Realizar validação em lote.");
+            Console.WriteLine("\n8. Sair");
             Console.Write("\n Escolha uma opção: ");
             var option = Console.ReadLine();
 
@@ -68,6 +74,10 @@ class Program
                         break;
 
                     case "7":
+                        _tradeBusiness.TradeClassifier();
+                        break;
+
+                    case "8":
                         return;
                     default:
                         Console.WriteLine("Opção inválida!");

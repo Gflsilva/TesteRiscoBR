@@ -7,7 +7,7 @@ using TesteRiscoBR.Entidates;
 
 namespace TesteRiscoBR.Business.Interface
 {
-    public interface IClassifier
+    public interface IClassifierTrade
     {
         public string Classify(TradeEntity trade);
     }

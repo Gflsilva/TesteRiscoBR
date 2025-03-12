@@ -54,5 +54,29 @@
     "Operator": "=",
     "Value": 100000.0,
     "Erros": true
+  },
+  {
+    "Id": 8,
+    "Name": "HIGH_RISK",
+    "Type": "PRIVATE",
+    "Operator": ">",
+    "Value": 1000000.0,
+    "Erros": false
+  },
+  {
+    "Id": 9,
+    "Name": "MEDIUM_RISK",
+    "Type": "PUBLIC",
+    "Operator": ">",
+    "Value": 1000000.0,
+    "Erros": false
+  },
+  {
+    "Id": 10,
+    "Name": "TESTE",
+    "Type": "PUBLIC",
+    "Operator": ">",
+    "Value": 10000.0,
+    "Erros": true
   }
 ]

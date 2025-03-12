@@ -11,5 +11,6 @@ public class CreateRequestValidator : AbstractValidator<TradeEntity>
         RuleFor(x => x.Value).NotEmpty().WithMessage("Valor é obrigatório.").PrecisionScale(10, 2, true).WithMessage("O valor deve ter no máximo dez dígitos e duas casas decimais.");
         RuleFor(x => x.ClientSector).NotEmpty().WithMessage("Setor é obrigatório.");
         RuleFor(x => x.NextPaymentDate).NotEmpty().WithMessage("Data é obrigatório.");
+        //RuleFor(x => x.IsPEP).NotEmpty().WithMessage("Preenchimento do tipo de pessoa é obrigatório.").Must(operatorValue => new[] { "=", ">", "<" }.Contains(operatorValue)).WithMessage("Operador inválido! Permitidos: '=', '>' ou '<'.");
     }
 }

@@ -11,10 +11,14 @@ namespace TesteRiscoBR.Repository.Interface
 {
     public interface ITradeBusiness
     {
+        public List<TradeEntity> ConsultarCategorias();
+
         public void AddTrade();
 
         public void RemoveTrades();
 
         public void ListTrades();
+
+        public void TradeClassifier();
     }
 }
