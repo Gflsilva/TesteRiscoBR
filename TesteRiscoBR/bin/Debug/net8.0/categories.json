@@ -1,82 +1,34 @@
 [
   {
     "Id": 1,
-    "Name": "LOW_RISK",
+    "Name": "Low_Risk_Public",
     "Type": "PUBLIC",
     "Operator": "<",
     "Value": 1000000.0,
-    "Erros": false
-  },
-  {
-    "Id": 2,
-    "Name": "CASA",
-    "Type": "PULIC",
-    "Operator": "PRIVATE",
-    "Value": 10000.0,
-    "Erros": false
-  },
-  {
-    "Id": 3,
-    "Name": "teste",
-    "Type": "public",
-    "Operator": "!",
-    "Value": 10.0,
-    "Erros": false
-  },
-  {
-    "Id": 4,
-    "Name": "teste",
-    "Type": "aaaaa",
-    "Operator": "\"",
-    "Value": 2.0,
-    "Erros": false
-  },
-  {
-    "Id": 5,
-    "Name": "a",
-    "Type": "public",
-    "Operator": "=",
-    "Value": 1.0,
-    "Erros": false
-  },
-  {
-    "Id": 6,
-    "Name": "a",
-    "Type": "PUBLIC",
-    "Operator": "=",
-    "Value": 1.0,
-    "Erros": false
-  },
-  {
-    "Id": 7,
-    "Name": "teste final",
-    "Type": "PUBLIC",
-    "Operator": "=",
-    "Value": 100000.0,
     "Erros": true
   },
   {
-    "Id": 8,
-    "Name": "HIGH_RISK",
+    "Id": 2,
+    "Name": "Low_Risk_Private",
     "Type": "PRIVATE",
-    "Operator": ">",
+    "Operator": "<",
     "Value": 1000000.0,
-    "Erros": false
+    "Erros": true
   },
   {
-    "Id": 9,
-    "Name": "MEDIUM_RISK",
+    "Id": 3,
+    "Name": "Medium_Risk_Public",
     "Type": "PUBLIC",
-    "Operator": ">",
+    "Operator": "=",
     "Value": 1000000.0,
-    "Erros": false
+    "Erros": true
   },
   {
-    "Id": 10,
-    "Name": "TESTE",
-    "Type": "PUBLIC",
-    "Operator": ">",
-    "Value": 10000.0,
+    "Id": 4,
+    "Name": "Medium_Risk_Private",
+    "Type": "PRIVATE",
+    "Operator": "=",
+    "Value": 1000000.0,
     "Erros": true
   }
 ]

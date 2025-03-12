@@ -29,7 +29,10 @@ class Program
         ICategoryRepository _categoryRepository = new CategoryRepository();
         ITradeRepository _tradeRepository = new TradeRepository();
 
-        IEnumerable<ITradeClassificationRule> tradeRules = new List<ITradeClassificationRule> { new ExpiredTradeRule(), new HighRiskTradeRule(), new DBConsultRisk(_categoryRepository) };
+        IEnumerable<ITradeClassificationRule> tradeRules = new List<ITradeClassificationRule> {
+            new ExpiredTradeRule(), new HighRiskTradeRule(), new MediumRiskTradeRule(), new DBConsultRisk(_categoryRepository) 
+        };
+
         IClassifierTrade _classifierTrade = new ClassifierTrade(tradeRules);
 
         ICategoryBusiness _categoryBusiness = new CategoryBusiness(_categoryRepository);

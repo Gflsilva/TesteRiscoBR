@@ -133,8 +133,11 @@ namespace TesteRiscoBR.Business
             foreach (var item in retorno)
             {
                 item.Category = _classifier.Classify(item);
+            }
 
-                _tradeRepository.UpdateTrade(item);
+            for (int i = 0; i < retorno.Count; i++)
+            {
+                _tradeRepository.UpdateTrade(retorno[i]);
             }
         }
     }

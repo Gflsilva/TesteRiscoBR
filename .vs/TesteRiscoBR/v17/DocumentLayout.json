@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|solutionrelative:testeriscobr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\business\\tradebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|solutionrelative:testeriscobr\\business\\tradebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\repository\\interface\\itraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|solutionrelative:testeriscobr\\repository\\interface\\itraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\repository\\traderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|solutionrelative:testeriscobr\\repository\\traderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|c:\\users\\gabri\\source\\repos\\testeriscobr\\testeriscobr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A19C16B2-1189-47AB-AB57-0CEF0E813A3A}|TesteRiscoBR\\TesteRiscoBR.csproj|solutionrelative:testeriscobr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 112,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -37,42 +33,33 @@
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Program.cs",
               "RelativeDocumentMoniker": "TesteRiscoBR\\Program.cs",
               "ToolTip": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Program.cs",
               "RelativeToolTip": "TesteRiscoBR\\Program.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAgwCcAAAA2AAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwFoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T19:19:13.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TradeBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Business\\TradeBusiness.cs",
-              "RelativeDocumentMoniker": "TesteRiscoBR\\Business\\TradeBusiness.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Business\\TradeBusiness.cs",
-              "RelativeToolTip": "TesteRiscoBR\\Business\\TradeBusiness.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAIAwwIgAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T20:07:39.696Z",
+              "WhenOpened": "2025-03-12T20:41:21.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ITradeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Repository\\Interface\\ITradeRepository.cs",
-              "RelativeDocumentMoniker": "TesteRiscoBR\\Repository\\Interface\\ITradeRepository.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Repository\\Interface\\ITradeRepository.cs",
-              "RelativeToolTip": "TesteRiscoBR\\Repository\\Interface\\ITradeRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA6AAAA",
+              "Title": "TradeBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Business\\TradeBusiness.cs",
+              "RelativeDocumentMoniker": "TesteRiscoBR\\Business\\TradeBusiness.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Business\\TradeBusiness.cs",
+              "RelativeToolTip": "TesteRiscoBR\\Business\\TradeBusiness.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAApwIYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T20:29:22.456Z",
+              "WhenOpened": "2025-03-12T20:51:31.479Z",
               "EditorCaption": ""
             },
             {
@@ -83,15 +70,15 @@
               "RelativeDocumentMoniker": "TesteRiscoBR\\Repository\\TradeRepository.cs",
               "ToolTip": "C:\\Users\\gabri\\source\\repos\\TesteRiscoBR\\TesteRiscoBR\\Repository\\TradeRepository.cs",
               "RelativeToolTip": "TesteRiscoBR\\Repository\\TradeRepository.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowAwAAAArAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAvwE0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T20:18:27.132Z",
+              "WhenOpened": "2025-03-12T20:54:07.03Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 200,
+          "DockedWidth": 288,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -113,6 +100,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         }

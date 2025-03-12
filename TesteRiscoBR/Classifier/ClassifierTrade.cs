@@ -22,7 +22,8 @@ namespace TesteRiscoBR.Business
                     return category;
                 }
             }
-            return "UNCATEGORIZED";
+
+            return "Não classificado";
         }
     }
 }
